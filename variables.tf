@@ -2,7 +2,7 @@
 variable "project_id" {default = ""}
 variable "folder_fw_policy" {default = ""}
 variable "org_fw_policy_auth_key" {default = ""}
-variable "org_fw_policy_id" {default = ""}
+variable "org_fw_policy_id" {default = "None"}
 variable "org_fw_id" {default = "65534"}
 
 #default values - can be customized
