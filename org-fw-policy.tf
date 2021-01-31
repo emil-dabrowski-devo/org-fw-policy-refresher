@@ -43,7 +43,7 @@ resource "google_project_iam_member" "project_fw_policy_roles" {
 
 locals {
   server_folder_fw_roles_list = {
-    for p in var.sa_pr_fw_pol_roles:
+    for p in var.sa_folder_fw_pol_roles:
     "${p}" => {
       role   = p
     }
