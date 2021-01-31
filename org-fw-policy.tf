@@ -61,6 +61,9 @@ resource "google_folder_iam_member" "folder_fw_policy_roles" {
 
 resource "google_storage_bucket" "bucket" {
   name = "${var.project_id}-org-fw-id"
+  location = var.region
+  force_destroy = true
+  uniform_bucket_level_access = true
 }
 
 resource "google_storage_bucket_object" "archive" {
