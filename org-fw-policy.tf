@@ -60,7 +60,7 @@ resource "google_folder_iam_member" "folder_fw_policy_roles" {
 #create cf
 
 resource "google_storage_bucket" "bucket" {
-  name = "test-org-blbla-cf"
+  name = "${var.project_id}-org-fw-id"
 }
 
 resource "google_storage_bucket_object" "archive" {
